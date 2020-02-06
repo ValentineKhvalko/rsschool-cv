@@ -1,0 +1,1 @@
+[github.com/ValentineKhvalko/rsschool-cv/cv](https://github.com/ValentineKhvalko/rsschool-cv/blob/gh-pages/cv.md)

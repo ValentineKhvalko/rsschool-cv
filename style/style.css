@@ -1,0 +1,47 @@
+
+.grid {
+    width: 922px;
+    margin: auto;
+    background-color: #F0F8FF;
+    font-family: FreeMono, monospace;
+    border: solid 1px black;
+    padding: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.img {
+    width: 300px;
+    border: solid 1px black;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+    top: 40px;
+    
+}
+
+.info {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.info ul li {
+    padding-bottom: 20px;
+}
+
+.code {
+    background-color: #F0FFFF;
+}
+
+p, h3 {
+    padding-left: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#summory {
+    
+    font-size: 40px;
+}

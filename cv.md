@@ -2,7 +2,7 @@
 
 ### 22 года 
 
-! [my image](https://sun9-9.userapi.com/c856024/v856024745/18b15e/7yTl0pxOYXs.jpg)
+![my image](https://sun9-9.userapi.com/c856024/v856024745/18b15e/7yTl0pxOYXs.jpg)
 
 ## Контактная информация 
 
@@ -31,6 +31,7 @@
 
 ### Пользователь вводит дату своего рождения, а ему выводится количество дней до этого дня.
 
+```
   <div>
      <input type="text" placeholder='YYYY-MM-DD' id='yearInput'>
      <input type="submit" value="Click on me" onclick="getDate()"><br>
@@ -50,8 +51,8 @@
           return (dayToBirthDay<=0) ? dayToBirthDay=Math.floor(((birthDayDate.getTime()+31536*10^6)-date.getTime())/(1000*60*60*24)):dayToBirthDay;
      };    
  </script>
+```
 
- 
 ## Опыт работы  
 
 * Оптыта младшего разроботчика не имел. Из опыта программирование могу

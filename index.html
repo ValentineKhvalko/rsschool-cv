@@ -52,19 +52,20 @@
                 <h3>Пользователь вводит дату своего рождения, а ему выводится количество дней до этого дня.</h3> 
                 <pre class="code">         
                     <code class="code">
-const userBirthDay=document.getElementById('yearInput');
+    const userBirthDay=document.getElementById('yearInput');
+    const day = 86400000;
+
+    function getDate() { 
+        document.getElementById('dayToBirthday').innerText=checkDay(userBirthDay);    
+    };
                        
-function getDate() { 
-    document.getElementById('dayToBirthday').innerText=checkDay(userBirthDay);    
-};
-                       
-function checkDay(birthDay) {
-    const date=new Date();
-    const birthDayDate=new Date(`${date.getFullYear()}${birthDay.value.slice(4)}`); 
-    const dayToBirthDay=Math.floor((birthDayDate.getTime()-date.getTime())/(1000*60*60*24));
-    return (dayToBirthDay<=0) ? dayToBirthDay=Math.floor(((birthDayDate.getTime()+31536*10^6)-date.getTime())/(1000*60*60*24)):
-    dayToBirthDay;
-};        
+    function checkDay(birthDay) {
+        const date=new Date();
+        const birthDayDate=new Date(`${date.getFullYear()}${birthDay.value.slice(4)}`); 
+        const dayToBirthDay=Math.floor((birthDayDate.getTime()-date.getTime())/day);
+        return (dayToBirthDay<=0) ? dayToBirthDay=Math.floor(((birthDayDate.getTime()+31536*10^6)-date.getTime())/day):
+        dayToBirthDay;
+    };        
                     </code> 
                 </pre>
             </section>
@@ -76,7 +77,7 @@ function checkDay(birthDay) {
 
             <section>
                 <h2>Образование</h2>
-                <ul>Самообучение в основном на:
+                <ul>Самообучение программированию в основном на:
                     <li><a href="learn.javascript.ru">learn.javascript.ru</a></li>
                     <li><a href="old.code.mu">old.code.mu</a></li>
                     <li>Книга <i>"Изучаем программирование на JavaScript"</i></li>
@@ -90,9 +91,9 @@ function checkDay(birthDay) {
                 <p>Постоянно самостоятельно учу язык используя мобильные приложения и сайты. Имел опыт общения с носителями языка в форме живого общения и переписки. Могу поддерживать разговор на просты темы, читать специализированную лиературу.</p>
             </section>
         </main>
-
         <footer>
-
+            <a href="https://github.com/ValentineKhvalko"><img id="git" src="./img/git.jpg"></a><br>
+            <span>2020</span>
         </footer>
     </div>
 </body>

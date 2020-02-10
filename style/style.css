@@ -1,0 +1,65 @@
+body {
+    background-color: #F0F8FF;
+}
+
+.grid {
+    width: 922px;
+    margin: auto;
+    background-color: #fff;
+    font-family: FreeMono, monospace;
+    border: solid 1px #fff;
+    padding: 50px;
+    padding-top: 0px;
+    border-radius: 5px;
+    position: relative;
+}
+
+section {
+    border-bottom: solid black 1px;
+    padding-bottom: 10px;
+}
+
+.img {
+    width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+    top: 0px;
+}
+
+.info {
+    margin-top: 40px;
+    padding-left: 60px;
+    
+}
+
+.info ul li {
+    padding-bottom: 20px;
+}
+
+.code {
+    background-color: #F0FFFF;
+}
+
+p, h3 {
+    padding-left: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#summory {
+    font-size: 40px;
+    padding-left: 30px;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#git {
+    width: 90px;
+    height: 50px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <title>HTML, CSS & Git Basics</title>
+</head>
+<body>
+    <div class="grid">
+        <header>
+            <h1 id="summory">Резюме</h1>
+            <img class="img" src="./img/photo.jpg">
+            <div class="info">
+                <h1>Валентин Хвалько</h1>
+                <ul>
+                    <h3>Контактная информация:</h3>
+                    <li><a href="http://esfeed@gmail.com">E-mail</a></li>
+                    <li><a href="http://vk.com/esfeed">VK</a></li>
+                    <li><a href="http://t.me/Valentine_Khvalko">Telegram</a></li>
+                    <li>Номер телефона<a href="#"> +375(29)8214032</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h1>Цели</h1>
+                <p>Мне очень хотелось бы наконец начать самореализовавыться в IT,
+                    так как эта сфера кажется для меня наиболее приемлемой. Люди, работающие в IT,
+                    постоянно рассказывают о том, как на работе они постоянно учаться чему-то новому,
+                    постоянно общаются со своими колегами и ищут более эффективные пути для решения задач.
+                    Это то, чего бы мне хотелось от работы: постоянное развитие, общение с людьми,
+                    готовыми так же расти и делиться опытом, разделять успехи и неудачи и двигаться дальше.
+                    Так же об успехе, даже сейчас, написав несколько функций и видя,
+                    как все работает уже чувсвуется оргомное удовлетворение,
+                    от решение поставленной перед собой задачи. А какое же оно будет от реальной задачи? 
+                    Вот это мне так же хочется узнать, получив работу программиста.</p>
+            </section>
+
+            <section>
+                <h2>Навыки</h2>
+                <ul>
+                    <li><b>Языки и технологии программирования</b>: Javascript (ES5, ES2015), HTML, CSS, ReactJS</li>
+                    <li><b>Контроль версий</b>: GitLab, GitHub</li>
+                    <li><b>IDE</b>: VS Code</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Примеры кода</h2>
+                <h3>Пользователь вводит дату своего рождения, а ему выводится количество дней до этого дня.</h3> 
+                <pre class="code">         
+                    <code class="code">
+    const userBirthDay=document.getElementById('yearInput');
+    const day = 86400000;
+
+    function getDate() { 
+        document.getElementById('dayToBirthday').innerText=checkDay(userBirthDay);    
+    };
+                       
+    function checkDay(birthDay) {
+        const date=new Date();
+        const birthDayDate=new Date(`${date.getFullYear()}${birthDay.value.slice(4)}`); 
+        const dayToBirthDay=Math.floor((birthDayDate.getTime()-date.getTime())/day);
+        return (dayToBirthDay<=0) ? dayToBirthDay=Math.floor(((birthDayDate.getTime()+31536*10^6)-date.getTime())/day):
+        dayToBirthDay;
+    };        
+                    </code> 
+                </pre>
+            </section>
+            
+            <section>
+                <h2>Опыт работы</h2>
+                <p>Оптыта младшего разроботчика не имел. Из опыта программирование могу отметить выполнение различных узконаправленных задачек <i>(прим. пункт 5)</i>. Несколько простых одностраничных сайтиков для отработки некоторых навыков в JS/HTML/CSS.</p>
+            </section>
+
+            <section>
+                <h2>Образование</h2>
+                <ul>Самообучение программированию в основном на:
+                    <li><a href="learn.javascript.ru">learn.javascript.ru</a></li>
+                    <li><a href="old.code.mu">old.code.mu</a></li>
+                    <li>Книга <i>"Изучаем программирование на JavaScript"</i></li>
+                    <li><a href="https://htmlacademy.ru/profile/id877117">https://htmlacademy.ru</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Навыки английского</h2>
+                <p>A-2</p>
+                <p>Постоянно самостоятельно учу язык используя мобильные приложения и сайты. Имел опыт общения с носителями языка в форме живого общения и переписки. Могу поддерживать разговор на просты темы, читать специализированную лиературу.</p>
+            </section>
+        </main>
+        <footer>
+            <a href="https://github.com/ValentineKhvalko"><img id="git" src="./img/git.jpg"></a><br>
+            <span>2020</span>
+        </footer>
+    </div>
+</body>
+</html>
